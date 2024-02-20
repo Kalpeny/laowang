@@ -27,7 +27,7 @@
         "嗅探词": ".m3u8#.mp4",
         "过滤词": ".html#url=http",
         "搜索模式": "0",
-        "搜索链接前缀": "/voddetail/",
+        "搜索链接前缀": "/vodsearch/",
         "搜索链接后缀": ".html",
         "分类url": "https://www.laowang.co/voddetail/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
         "分类": "电影&电视剧&综艺&动漫",
