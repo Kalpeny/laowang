@@ -3,7 +3,7 @@
     {
       "key": "laowang",
       "name": "老王电影",
-      "type": 1,
+      "type": 0,
       "api": "https://www.laowang.co/api.php/provide/vod/?ac=list",
       "playUrl": "https://player.laowang.co/player/?url=",
       "searchable": 1,
