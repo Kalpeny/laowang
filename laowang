@@ -33,9 +33,9 @@
   ],
   "parses": [
     {
-      "name": "解析1",
+      "name": "laowang-player",
       "type": 0,
-      "url": "https://xxx.xxx?jx="
+      "url": "https://player.laowang.co/player/?url="
     }
   ],
   "flags": [
