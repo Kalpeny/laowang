@@ -43,7 +43,22 @@
   ],
   "lives": [
     {
-      "group": "自定义"
+      "name": "直播",
+      "type": 0,
+      "url": "http://home.jundie.top:81/Cat/tv/live.txt",
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
+    },
+    {
+      "group": "redirect",
+      "channels": [
+        {
+          "name": "live",
+          "urls": [
+            "proxy://do=live&type=txt&ext=aHR0cDovL2hvbWUuanVuZGllLnRvcDo4MS9DYXQvdHYvbGl2ZS50eHQ="
+          ]
+        }
+      ],
+      "epg":"http://epg.51zmt.top:8000/api/diyp/"
     }
   ],
   "parses": [
