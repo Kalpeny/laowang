@@ -9,7 +9,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-	    "cateManual": {
       "categories": [
         "电影": "1",
         "电视剧": "2",
