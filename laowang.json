@@ -9,7 +9,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "ext":[
+      "ext":{
         "请求头": "手机",
         "起始页": "1",
         "二次截取": "<div class=\"module-list\">&&<div class=\"mx-lrmenu\">[替换:<div class=\"fixed_right_bar\">>><div class=\"module-item\">]||首页--最新热播&&<div  class=\"module-main\"[替换:<div class=\"module module-wrapper\">>><div class=\"module-item\">]",
@@ -38,7 +38,7 @@
         "剧情值": "*",
         "地区": "大陆&香港&台湾&美国&法国&英国&日本&韩国&德国&泰国&印度&意大利&西班牙&加拿大&其他内地&韩国&香港&台湾&日本&美国&泰国&英国&新加坡&其他内地&港台&日韩&欧美||国产&日本&欧美&其他",
         "筛选": "1"
-      ]
+      }
     }
   ],
   "lives": [
