@@ -6,7 +6,7 @@
       "type": 1,
       "api": "https://www.laowang.co/api.php/provide/vod/",
       "playUrl": "https://player.laowang.co/player/?url=",
-      "ext": "https://www.laowang.co/"
+      "ext": "https://raw.githubusercontent.com/Kalpeny/laowang/main/fenlei.json"
     }
   ]
 }
