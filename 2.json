@@ -11,21 +11,24 @@
 	//(选填) 分类名
 	"cateManual": {
 		"电影": "1",
-		"美剧": "2",
-		"韩剧": "3",
-		"日剧": "4",
-		"泰剧": "5",
-		"动漫": "6"
+		"电视剧": "2",
+		"综艺": "3",
+		"动漫": "4",
+		"短剧": "39",
 	},
 	//(选填) 列表页 
 	"list":{
 		//(选填) 当前页面解析区域截取，程序会从截取后的数据中查找各字段，这里只是演示，按实际需求填写
 		"region":["<html>", "</html>"],
-		//"url": "https://www.laowang.co/list/{cateId}-{catePg}.html",
+		//"url": "https://www.laowang.co/voddetail/{cateId}.html",
 		//(选填) 列表页的页面地址，具体规则和xpath一致，不存在在里会使用homeUrl，但是homeUrl必须是带{cateId}\{catePg}的这个格式
-		"url": "https://www.laowang.co/vodshow/{cateId}-{area}--{class}-----{catePg}---{year}.html", 
+		//"url": "https://www.laowang.co/vodtype/{cateId}.html", 
 		// (选填) 有的网站分类的第一页和后面的页url规则不同，可以这样指定具体的catePg 对应的url
-		//"1": "https://www.laowang.co/vodshow/{cateId}-{area}--{class}-----1---{year}.html",
+		"1": "https://www.laowang.co/vodtype/movie.html",
+		"2": "https://www.laowang.co/vodtype/tv.html",
+		"3": "https://www.laowang.co/vodtype/tvshow.html",
+		"4": "https://www.laowang.co/vodtype/animation.html",
+		"39": "https://www.laowang.co/vodtype/duanju.html",
 		// 视频ID，列表页不能正常显示一般都是这个规则不对
 		// 爬虫使用JSONArray来获取相关字段内容，JSONArray中共用到5个参数，具体说明：
 		// 1 要获取字段的前缀，必填
@@ -33,7 +36,7 @@
 		// 3 获取到字段后该字段正确值的左偏移量，真正的值会加上这个偏移量，默认为0
 		// 4 获取到字段后该字段正确值的右偏移量，真正的值会加上这个偏移量，默认为0
 		// 5 定位到该字段后，往上回溯的层级(往上数祖先节点，如果当前字段没有匹配到标签的起始位置也要算一个节点)，具体是要找到包含当前页各字段的那部分代码(本页要求的如 vod_id, vod_name vod_pic)
- 		"vod_id": ["href=\"/detail/", ".html",0,0,3],
+ 		"vod_id": ["href=\"/voddetail/", ".html",0,0,3],
 		//(选填) 视频名
 		"vod_name": ["title=\"", "\""],
 		//(选填) 图片
@@ -46,7 +49,7 @@
 		//(选填) 当前页面解析区域截取，程序会从截取后的数据中查找各字段，这里只是演示，按实际需求填写
 		"region":["<html>", "</html>"],
 		//(选填) 详情页的url, 不存在时会使用list.vod_id进行推算
-		"url": "https://www.laowang.co/detail/{vid}.html",
+		"url": "https://www.laowang.co/voddetail/{vid}.html",
 		//(选填) 视频名
 		"vod_name":["<h1 class=\"title\">", "</h1>"],  
 		//(选填) 视频图片
@@ -73,7 +76,7 @@
 		//(选填) 当sort为1时会对找到播放列表进行倒序
 		"sort": 0,
 		 //(选填) 播放列表页的url, 一般都和详情页的地址一样，有部分网站的播放页和详情页不同时才填这个字段
-		"url": "https://www.laowang.co/detail/{vid}.html",
+		"url": "https://www.laowang.co/voddetail/{vid}.html",
 		//(选填) 播放url的字段规则，这里需要回溯到包含单个播放源全部play_url的html节点
 		"vod_play_url": ["i><a href=\"/video/", "\"",-7,0,2],
 		//(选填) 播放地址的名称
