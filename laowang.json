@@ -8,8 +8,7 @@
       "playUrl": "https://player.laowang.co/player/?url=",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "ext": ""
+      "filterable": 1
     }
   ],
   "lives": [
