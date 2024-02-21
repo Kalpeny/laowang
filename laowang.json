@@ -1,6 +1,6 @@
 {
-            "key": "老王",
-            "name": "老王",
+            "key": "老王电影",
+            "name": "老王电影",
             "type": 1,
             "api": "https://www.laowang.co/api.php/provide/vod/",
             "playurl": "https://player.laowang.co/player/?url=",
